@@ -1,0 +1,112 @@
+body
+{
+     color: #f8f9fa;
+background: url("https://wallpapercave.com/wp/wp3857882.png") 0px 0px no-repeat;
+background-size:cover;
+background-attachment: fixed;
+font-family: 'Kufam', cursive;
+
+}
+
+.form-control{
+        width: 60%;
+}
+
+.jdlogin{
+    left: 130px;
+}
+
+
+.row{
+    margin-top:100px;
+}
+
+img{
+    width: 70%;
+}
+
+
+
+.items { position:relative; width:1200px; margin-right:0px; padding-bottom:10px; }
+.items ul{ list-style-type: none;}
+.items ul .image{ text-align: center;}
+.items ul li{ float:left; border:dashed 1px #cfcfcf; width:194px; margin:40px 18px 12px 0; padding:13px; }
+.items ul li p.price{ padding-top:2px; margin: 2px; }
+.items ul li p.price strong{ color:#e9ff1e; font-size:14px; text-align: left;}
+
+a{color:aqua;}
+
+p {
+    
+    text-align-last: start;
+    margin:2px;
+    color:white;
+}
+
+.carousel-item img{
+    margin-top: 40px;
+    widows: 93%;
+    height: 93vh;
+}
+
+
+.about_img{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+  } 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas, sans-serif;
+  }
+  
+  :root {
+    --bg-color: #031321;
+    --primary-color: #2196f3;
+    --secondary-color: #255784;
+  }
+
+
+  
+@media (max-width:768px) {
+    .items{
+        width:60%;
+        float: center;
+    }
+    .items ul{ list-style-type: none;}
+    .items ul .image{ text-align: center;}
+    .items ul li{  border:dashed 1px #cfcfcf; width:304px; margin:4px 13px 12px 0; padding:13px;
+        }
+ 
+          }
+          p{
+              margin-left:0px;
+              
+          }
+
+          .jdsignup{
+            left:70px;
+            
+          }
+
+         
+          .jdsignup.button.btn{
+            position:absolute;
+            box-sizing: border-box;
+            font-size: 7px;
+            size: 30px;
+            width: 205px;
+            left:203px;
+          }
+}

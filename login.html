@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        
+        }
+  
+        .full-screen{
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .full-screen video{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+        }
+        /*Login button effect*/
+        .btn {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-align: center; 
+    }
+
+  
+      .btn:hover {
+        color: var(--secondary-color);
+        background: var(--primary-color);
+        box-shadow: 0 0 20px var(--primary-color), 0 0 80px var(--primary-color),
+          0 0 160px var(--primary-color), 0 0 320px var(--primary-color);
+        transition-delay: 1s;
+      }    
+        .btn span {
+          position: absolute;
+          display: block;
+        }
+        .btn span:nth-child(1) {
+          top: 0;
+          transform: translateX(-115%);
+          width: 100%;
+          height: 4px;
+          background: linear-gradient(90deg, transparent, var(--primary-color));
+        }
+        .btn:hover span:nth-child(1) {
+          transform: translateX(100%);
+          transition: 1s;
+        }
+        .btn span:nth-child(3) {
+          bottom: 0;
+          transform: translateX(100%);
+          width: 100%;
+          height: 4px;
+          background: linear-gradient(270deg, transparent, var(--primary-color));
+        }
+        .btn:hover span:nth-child(3) {
+          transform: translateX(-115%);
+          transition: 1s 0.5s;
+        }
+        .btn span:nth-child(2) {
+          right: 0;
+          transform: translateY(-130%);
+          width: 4px;
+          height: 100%;
+          background: linear-gradient(180deg, transparent, var(--primary-color));
+        }
+        .btn:hover span:nth-child(2) {
+          transform: translateY(100%);
+          transition: 1s 0.25s;
+        }
+        .btn span:nth-child(4) {
+          left: 0;
+          transform: translateY(100%);
+          width: 4px;
+          height: 100%;
+          background: linear-gradient(360deg, transparent, var(--primary-color));
+        }
+        .btn:hover span:nth-child(4) {
+          transform: translateY(-130%);
+          transition: 1s 0.75s;
+        }
+
+  
+        @media (max-width:768px) {
+           
+         
+          .body{
+            margin-right: 100px;
+          }
+       
+        .form{
+        left: 20px;
+      }
+        .moblogin{
+          margin-right: 200px;
+          margin-left: 0px;
+        }
+
+        div.jdlogin{ 
+         right: 100px;
+        left:30px;
+        }
+       .row{
+         margin-top: 10px;
+         margin-bottom: 0px;
+       }
+      .form.button.btn{
+        left: 0px;
+      }
+   .full-screen{
+     width: fit-content;
+   }
+      }
+    </style>
+
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PUBG MOBILE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="https://krupesh138.github.io/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://krupesh138.github.io/signup.html">Sign up</a>
+            </li>
+            <li class="nav-item  active">
+              <a class="nav-link" href="https://krupesh138.github.io/login.html">Login</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" width=20px data-toggle="dropdown" aria-expanded="false">
+                Items
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://krupesh138.github.io/uc.html">Uc</a></li>
+                <li><a class="dropdown-item" href="https://krupesh138.github.io/gskin.html">Gun Skin</a></li>
+                
+              </ul>
+            </li>
+           
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="full-screen"> 
+        <div>
+          <video src="C:\Users\JAGDISH\Documents\GitHub\krupesh138.github.io\krupesh138.github.io\video.mp4" autoplay loop></video>
+        </div>
+    </div>
+  <div class="container my-5 moblogin" style="margin-right:90px">
+      <div class="row"> 
+          <div class="col-10 col-md-8 mx-auto jdlogin">
+              <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                   
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                  </div>
+                  <button class="btn" type="submit" style="left:50px">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Login
+                  </button>
+                  
+              </form>
+          </div>
+          <div class="mx-auto mt-5 mobfoot">
+              <p>
+                  © 2020  PUBG SignIn form. All Rights Reserved | Design by JD GOHIL
+              </p>
+          </div>
+      </div>   
+  </div>
+    
+      
+ 
+
+ 
+
+     <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
